@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Seu Nome — Portfólio</title>
+  <style>
+    :root { --bg:#0b1220; --card:#111b2e; --txt:#e7eefc; --muted:#b8c7e6; --accent:#6ea8fe; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:linear-gradient(120deg,#0b1220,#0a1a33); color:var(--txt); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 18px; }
+    .card { background: rgba(17,27,46,.88); border:1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 20px; margin: 14px 0; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    h2 { margin: 0 0 10px; font-size: 18px; color: var(--muted); }
+    p, li { color: var(--muted); line-height: 1.6; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badges span { display:inline-block; padding:6px 10px; border-radius: 999px; background: rgba(110,168,254,.12); border:1px solid rgba(110,168,254,.25); margin: 6px 6px 0 0; color: var(--txt); font-size: 13px;}
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .proj { padding: 14px; border-radius: 12px; background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); }
+    .proj b { color: var(--txt); }
+    .top { display:flex; flex-wrap: wrap; gap: 14px; align-items: baseline; justify-content: space-between; }
+    .links a { margin-right: 12px; }
+    .small { font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <div>
+          <h1>Seu Nome</h1>
+          <h2>Desenvolvedor Web (Laravel/Vue/MySQL) • Marceneiro • Projetista AutoCAD (2D/3D)</h2>
+        </div>
+        <div class="links small">
+          <a href="https://github.com/SEUUSUARIO" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/SEULINK" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:seuemail@exemplo.com">Email</a>
+          <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+
+      <p>
+        Eu construo sistemas web completos (API + Front) e entendo o dia a dia de produção/obra.
+        Busco oportunidades como dev (remoto ou local) e também projetos freelancer.
+      </p>
+
+      <div class="badges">
+        <span>PHP</span><span>Laravel</span><span>Vue.js</span><span>MySQL</span>
+        <span>HTML/CSS/JS</span><span>Git</span><span>Docker (básico)</span>
+        <span>AutoCAD 2D/3D</span><span>Marcenaria</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Projetos (coloque links reais)</h2>
+      <div class="grid">
+        <div class="proj">
+          <b>Gestor de Orçamentos (Laravel + Vue + MySQL)</b>
+          <p>Login, cadastro de clientes, orçamentos com itens, geração de PDF, status do pedido.</p>
+          <p class="small">
+            <a href="https://SEULINK-DEMO" target="_blank" rel="noreferrer">Demo</a> •
+            <a href="https://github.com/SEUUSUARIO/REPO1" target="_blank" rel="noreferrer">Código</a>
+          </p>
+        </div>
+        <div class="proj">
+          <b>API de Catálogo (Laravel)</b>
+          <p>CRUD, validação, paginação, autenticação e testes básicos.</p>
+          <p class="small">
+            <a href="https://github.com/SEUUSUARIO/REPO2" target="_blank" rel="noreferrer">Código</a>
+          </p>
+        </div>
+        <div class="proj">
+          <b>Portfólio AutoCAD</b>
+          <p>Plantas baixas e modelos 3D (prints organizados).</p>
+          <p class="small">
+            <a href="https://drive.google.com/SEULINK" target="_blank" rel="noreferrer">Ver</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>O que eu busco</h2>
+      <ul>
+        <li>Vaga dev fullstack (Laravel/Vue) ou back-end (Laravel) ou front-end (Vue)</li>
+        <li>Projetos para marcenarias, arquitetos e pequenos negócios</li>
+      </ul>
+      <p class="small">Última atualização: <script>document.write(new Date().toLocaleDateString('pt-BR'))</script></p>
+    </div>
+  </div>
+</body>
+</html>
